@@ -24,6 +24,7 @@ pub const CARDANO_MAINNET_URL: &str = "https://cardano-mainnet.blockfrost.io/api
 pub const CARDANO_PREPROD_URL: &str = "https://cardano-preprod.blockfrost.io/api/v0";
 pub const CARDANO_PREVIEW_URL: &str = "https://cardano-preview.blockfrost.io/api/v0";
 pub const CARDANO_TESTNET_URL: &str = "https://cardano-testnet.blockfrost.io/api/v0";
+pub const CARDANO_SANCHONET_URL: &str = "https://cardano-sanchonet.blockfrost.io/api/v0";
 pub const IPFS_URL: &str = "https://ipfs.blockfrost.io/api/v0";
 
 /// SDK version being used.

@@ -1,5 +1,6 @@
 use crate::{
     pagination::Pagination, CARDANO_MAINNET_URL, CARDANO_PREPROD_URL, CARDANO_PREVIEW_URL,
+    CARDANO_SANCHONET_URL,
 };
 use std::error::Error;
 use url::{form_urlencoded, Url as UrlI};
@@ -59,6 +60,7 @@ impl Url {
             id if id.starts_with("mainnet") => CARDANO_MAINNET_URL,
             id if id.starts_with("preview") => CARDANO_PREVIEW_URL,
             id if id.starts_with("preprod") => CARDANO_PREPROD_URL,
+            id if id.starts_with("sanchonet") => CARDANO_SANCHONET_URL,
             _ => CARDANO_MAINNET_URL,
         }
         .to_string()
